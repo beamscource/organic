@@ -32,9 +32,10 @@ def get_file_list(input_path):
 
     if os.path.isdir(input_path):
         file_list = []
-        for file in os.listdir(input_path):
-            if file.endswith('.wav'):
-                file_list.append(file)
+
+    for file in os.listdir(input_path):
+        if file.endswith('.wav'):
+            file_list.append(file)
     return file_list
 
 def main(args):
